@@ -27,6 +27,7 @@ contract Lottery{
         players.push(payable(msg.sender));
 
     } 
+    //hdisnjandjsbjdbauidbil
 
     function random() private view returns(uint) {
         return uint(sha256(abi.encodePacked(block.difficulty,block.number,players)));
